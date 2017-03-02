@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
 <head>
   <meta charset="utf-8">
   <%
@@ -32,7 +32,7 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
   <%- partial('css') %>
-
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script><!--微博分享-->
   <style type="text/css">
   <% var defaultCtnBg = 'linear-gradient(200deg,#a0cfe4,#e8c37e)' %>
     #container.show {
