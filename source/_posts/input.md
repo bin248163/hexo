@@ -4,7 +4,7 @@ date: 2017-02-15 11:03:14
 tags: css
 ---
 
-```
+```css
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
 }

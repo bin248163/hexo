@@ -5,7 +5,7 @@ tags: jquery
 ---
 
 ### 禁用页面右键菜单
-```
+```javascript
 $(document).ready(function(){
     $(document).bind("contextmenu",function(e){
         return false;
@@ -14,7 +14,7 @@ $(document).ready(function(){
 ```
 <!--more-->
 ### 在新窗口打开页面
-```
+```javascript
  $(document).ready(function(){
     $('a[href^="http://www.baidu.com"]').attr("target","_blank");
 });
@@ -22,7 +22,7 @@ $(document).ready(function(){
 <a href="http://www.baidu.com"></a>
 ```
 ### 判断浏览器类型
-```
+```javascript
  $(document).ready(function() {
     //firefox 2 and above
     if($.browser.mozilla && $.browser.version > = "1.8") {
@@ -55,11 +55,11 @@ $(document).ready(function(){
 });
 ```
 jQuery 从 1.9 版开始，移除了 $.browser 和 $.browser.version ， 取而代之的是 $.support 。
-```
+```html
 <script src=”http://libs.baidu.com/jquery/1.8.3/jquery.min.js”></script>
 ```
 ### 输入框文字获取和失去焦点
-```
+```javascript
 $(document).ready(function() {
 $("input.text1").val("Enter your search text here");
    textFill($('input.text1'));
@@ -75,7 +75,7 @@ $("input.text1").val("Enter your search text here");
 }
 ```
 ### 返回顶部滑动动画
-```
+```javascript
  $top.click(function() {
         var speed = 300; //滑动的速度
         $('body,html').animate({
@@ -85,7 +85,7 @@ $("input.text1").val("Enter your search text here");
     });
 ```
 ### 获取鼠标位置
-```
+```javascript
  $(document).ready(function() {
     $(document).mousemove(function(e){
         $('#XY').html("X:" + e.pageX + "|Y:" + e.pageY)
@@ -93,7 +93,7 @@ $("input.text1").val("Enter your search text here");
 });
 ```
 ### 判断元素是否存在
-```
+```javascript
  $(document).ready(function() {
     if(("#id").length){
         //do something
@@ -101,7 +101,7 @@ $("input.text1").val("Enter your search text here");
 });
 ```
 ### 点击div跳转
-```
+```javascript
  $("div").click(function(){
     window.location=$(this).find("a").attr("href");
     return false;
@@ -110,7 +110,7 @@ $("input.text1").val("Enter your search text here");
 <div><a href="http://www.baidu.com"></a></div>
 ```
 ### 判断浏览器宽度添加不同样式
-```
+```javascript
  $(document).ready(function() {
     function checkWindowSize(){
         if ($(window).width() > 1200) {
@@ -123,7 +123,7 @@ $("input.text1").val("Enter your search text here");
 });
 ```
 ### 回车提交表单
-```
+```javascript
  $(document).ready(function() {
     $("input").keyup(function(e){
         if(e.watch=="13"){
@@ -133,11 +133,11 @@ $("input.text1").val("Enter your search text here");
 });
 ```
 ### textarea高度自适应
-```
+```html
  <textarea name="" rows="" cols="" class="text5" onpropertychange="this.style.height=this.scrollHeight+'px';" oninput="this.style.height=this.scrollHeight+'px';"></textarea>
 ```
 ### 将一个元素的背景链接赋值到另一个元素上
-```
+```javascript
  var img1 = $(".banner").css("backgroundImage").replace(' url(', '').replace(' )', '');
  var img2 = 'background-image:' + img1;
  $('.head').attr('style', img1).addClass('position');

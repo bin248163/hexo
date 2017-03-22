@@ -26,7 +26,7 @@ Iconfont的优势：
 “存储为项目”是指将用户选择的图标存储到淘宝CDN上，可以在iconfont.cn个人图标管理>项目图标管理中创建一个新项目或者存入历史记录，方便用户下次对项目图标的增加或删除；
 
 在iconfont.css文件中获取前端应用代码：
-```
+```css
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1474874755'); /* IE9*/
   src: url('iconfont.eot?t=1474874755#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -52,7 +52,7 @@ Iconfont的优势：
 ![icon](icon/3.png)
 
 将图标字体应用于页面：
-```
+```html
 <i class="iconfont">&#xe682;</i>
 ```
 使用i标签需添加display：block或display：inline-block属性。

@@ -5,7 +5,7 @@ tags: javascript
 ---
 
 JQuery的写法
-```
+```javascript
  $('.videoA').click(function() {
         var spUrl = $(this).attr("href");
         $('.video object').attr("date",spUrl);
@@ -15,7 +15,7 @@ JQuery的写法
 ```
 <!--more-->
 需兼容IE则可以不用attr，而使用.html替换整个div内部的内容
-```
+```javascript
  $('.videoA').click(function() {
         var spUrl = $(this).attr("href");
         var object_str='<object data="'+spUrl+'" style="width: 100%;height: 100%;display: block;" />';

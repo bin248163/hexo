@@ -11,7 +11,7 @@ tags: css
 ### HTML
 
 首先写好HTML标签，给需要滚动时触发的元素添加ID。
-```
+```html
 <div class="w-1000 pc-30" id="jsn">
 ```
 <!--more-->
@@ -20,7 +20,7 @@ tags: css
 在样式表中编写好动画样式：
 
 .t-3为页面加载时添加的样式，.t-3h为页面滚动到该元素位置时添加的样式。（样式使用CSS预处理器SASS书写，需了解SASS请点击这里）
-```
+```css
 @mixin hover($value:.2s){-webkit-transition: all $value;-o-transition: all $value;-moz-transition: all $value;transition: all $value;}
 .t-3{transform: translate(0, 200px);@include hover(.8s);opacity: 0;filter: alpha(opacity=0);}
 .t-3h{transform: translate(0, 0);opacity: 1;filter: alpha(opacity=100);}
@@ -28,7 +28,7 @@ tags: css
 ### JQuery
 
 判断元素滚动到页面底部的时候加载.t-3h样式。
-```
+```javascript
 var jsn=$('#jsn')；
 $(window).scroll(function() {
         if ($(window).scrollTop() > 0) {

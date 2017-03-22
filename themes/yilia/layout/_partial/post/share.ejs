@@ -2,7 +2,8 @@
   var sUrl = url.replace(/index\.html$/, '');
   sUrl = /^(http:|https:)\/\//.test(sUrl) ? sUrl : 'http:' + sUrl;
 %>
-<div class="share-btn share-icons tooltip-left">
+<wb:share-button appkey="827557553" addition="simple" type="button" style="float: right;"></wb:share-button>
+<div class="share-btn share-icons tooltip-left" style="display: none;">
   <div class="tooltip tooltip-east">
     <span class="tooltip-item">
       <a href="javascript:;" class="share-sns share-outer">
@@ -49,5 +50,4 @@
       <img src="<%- 'qrcode' in locals ? qrcode(sUrl) : 'http://s.jiathis.com/qrcode.php?url=' + sUrl  %>" alt="微信分享二维码">
     </div>
 </div>
-
 <div class="mask js-mask"></div>

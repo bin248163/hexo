@@ -17,7 +17,7 @@ tags: css
 解决办法：
 
 当元素padding/margin值的单位为百分比的值时，它的top/right/bottom/left都是基于父元素的宽度的，而元素的百分比宽度也是基于父元素宽度的，这样就有思路了：
-```
+```css
 div {
   padding-top:20%;
   width:20%;
@@ -31,7 +31,7 @@ div {
 虽然div的高度为0，但因为有padding-top的原因在我们看来这还是一个宽高相等的div。
 
 接下来我们要做的就是往元素中添加图片， 该元素的高度为0，我们不能直接在里面插入图片，需要用到定位的方式：
-```
+```css
 div {
   padding-top:20%;
   width:20%;

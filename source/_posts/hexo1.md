@@ -9,7 +9,7 @@ tags: [hexo,git]
 ### GitHub Pages是什么？
 
 GitHub Pages本用于介绍托管在GitHub的项目， 不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。
-github Pages可以被认为是用户编写的、托管在github上的静态网页。
+Github Pages可以被认为是用户编写的、托管在github上的静态网页。
 <!--more-->
 ### 安装软件
 

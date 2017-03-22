@@ -12,7 +12,7 @@ html代码：
 ```
 <!--more-->
 css代码：
-```
+```css
 .check-w {width: 24px;height: 18px;cursor: pointer;text-align: center;background-image: url(../images/check1.png);background-repeat: no-repeat;background-position: 0 -1px;}
 .check {opacity: 0;display:block;cursor: pointer;filter: alpha(opacity=0);}
 .this {background-position: 0 -22px;}
@@ -20,7 +20,7 @@ css代码：
 在radio中，选框为单选框，即在多个选项中只能选择一个，因此只需要在为一个radio外层添加样式的同时移除其它radio外层div样式即可。
 
 js代码如下：
-```
+```javascript
 $(".check-w").click(function(){
   $(this).addClass("this").siblings().removeClass("this");
 })
@@ -33,7 +33,7 @@ $(".check-w").click(function(){
 js代码如下：
 
 JQ1.9以上版本移除了toggle事件因此可以使用如下方式
-```
+```javascript
 var flag=1;
     $(".check-w").click(function(){
         if(flag==1){
@@ -45,7 +45,7 @@ var flag=1;
         }
 ```
 也可以使用JQ1.9以下版本
-```
+```javascript
 $(".check-w").click(function(){
   $(this).toggleClass( "this" );
 })

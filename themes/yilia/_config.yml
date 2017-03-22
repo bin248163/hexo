@@ -2,7 +2,8 @@
 
 menu:
   主页: /
-  #随笔: /tags
+  git: /tags/git
+  css: /tags/css
 
 # SubNav
 subnav:
@@ -88,11 +89,11 @@ smart_menu:
   friends: '友链'
   aboutme: '关于我'
 
-friends:
+friends: 
+  home: http://www.qianxiaoduan.com
   github: https://github.com/bin248163
-  blog: http://blog.qianxiaoduan.com/
   taobao: https://shop151980538.taobao.com/?spm=a230r.7195193.1997079397.2.pEuJRi
-  home: http://www.qianxiaoduan.com/
+  zhiwei: http://juelie123.coding.me
 
 aboutme: 前小端<br> <br> 专注于前端开发
 

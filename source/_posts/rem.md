@@ -14,7 +14,7 @@ rem于em其实有点类似，不同的是rem是相对于根元素的字体大小
 ### rem的使用
 rem相对于根元素<html>的font-size来做计算,举个例子：
 设置根元素<html>的font-size：14px，div宽高为10rem，则得到一个宽高各为140px的div。
-```
+```css
  html{font-size: 14px;}
  div{width: 10rem;height: 10rem;background: #ff6700;}
 ```
@@ -22,7 +22,7 @@ rem相对于根元素<html>的font-size来做计算,举个例子：
 使用rem布局需要在不同的分辩率下给根元素<html>的font-size不同的值，具体的实现方式有以下两种：
 
 1.使用媒介查询
-```
+```css
 @media only screen and (max-width: 320px){html{font-size: 9px;} }
 @media only screen and (min-width: 320px) and (max-width: 352px){html{font-size: 10px;} }
 @media only screen and (min-width: 352px) and (max-width: 384px){html{font-size: 11px;} }
@@ -37,7 +37,7 @@ rem相对于根元素<html>的font-size来做计算,举个例子：
 @media only screen and (min-width: 640px){html{font-size: 20px;} }
 ```
 2.通过js计算
-```
+```javascript
  !(function(doc, win) {
  var docEle = doc.documentElement,
  event = "onorientationchange" in window ? "orientationchange" : "resize",
@@ -51,7 +51,7 @@ rem相对于根元素<html>的font-size来做计算,举个例子：
 }(document, window));
 ```
 需注意的是使用rem布局需在页面头部定义mate标签禁止页面缩放：
-```
+```html
  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
 ```
 Viewport语法
@@ -71,7 +71,7 @@ user-scalable:用户是否可以手动缩放。
 ### rem使用中遇到的问题
 
 1.同时使用了js判断与媒介查询判断在页面载入时可能出现页面重新布局，原因是媒介查询根据一定的像素范围给定字体的大小值，例如：
-```
+```css
 @media only screen and (min-width: 608px) and (max-width: 640px){html{font-size: 19px;} }
 ```
 而js在不同像素下计算字体的大小是不一样的可能会出现带小数位的字体大小，同时使用就会出现页面载入时页面重新布局的现象，建议js判断与媒介查询选择一种使用。

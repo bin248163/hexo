@@ -10,10 +10,10 @@ tags: wordpress
 域名选择
 
 域名后缀常用的有.com,.net,.org，当然也可以选择一些比较个性的如.top等，.com域名的均价为每年￥50左右。
-注意.cn域名属于国家域名，由CNNIC管理，中国互联网络管理中心 （China Internet Network Information Center） 即CNNIC负责管理，因此不建议注册.cn域名。
+注意.cn域名属于国家域名，由CNNIC管理，中国互联网络管理中心 （China Internet Network Information Center） 即CNNIC负责管理，因此不建议注册.cn域名。<!--more-->
 
 域名注册机构
-<!--more-->
+
 国内的有阿里（万网）、易名中国、西部数码、35互联等，国外的有Godaddy、Name等。
 
 域名注册流程

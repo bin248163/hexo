@@ -9,7 +9,7 @@ tags: css
 ### 1.使用空标签清除浮动。
 
 实现方法为在父级元素内所有的浮动元素后添加一个空元素
-```
+```html
 <div class="f">
  <div class="a"></div>
  <div class="b"></div>
@@ -18,7 +18,7 @@ tags: css
 ```
 <!--more-->
 其css样式为
-```
+```css
 .f{background: #00f;padding: 10px;width: 400px;}
 .a{width: 100px;height: 50px;float: left;background: #f00;margin: 10px;}
 .b{width: 150px;height: 100px;float: left;background: #0f0;margin: 10px;}
@@ -31,7 +31,7 @@ tags: css
 通过为父级元素定义overflow属性来清除浮动。
 
 其css样式为
-```
+```css
 .f{background: #00f;padding: 10px;width: 400px;overflow: hidden;}
 .a{width: 100px;height: 50px;float: left;background: #f00;margin: 10px;}
 .b{width: 150px;height: 100px;float: left;background: #0f0;margin: 10px;}
@@ -43,7 +43,7 @@ tags: css
 使用:after伪元素来在元素内部插入两个元素块，从面达到清除浮动的效果。其实现原理类似于clear:both方法，只是区别在于:clear在文档中插入一个div.clear标签，而此方法为使用其伪类在元素内部增加一个类似于div.clear的效果。
 
 其css样式为
-```
+```css
 .f{background: #00f;padding: 10px;width: 400px;}
 .f:after{display: block;content: "";clear: both;}
 ```
