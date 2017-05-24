@@ -8,7 +8,7 @@ tags: vue
 node: [http://nodejs.cn/download/](http://nodejs.cn/download/)
 git: [https://git-for-windows.github.io/](https://git-for-windows.github.io/)
 
-### 打开`git bash`全局安装vue-cli
+### 打开git bash全局安装vue-cli
 这里我们将 npm的注册表源设置为淘宝镜像来提升安装速度<!--more-->
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org

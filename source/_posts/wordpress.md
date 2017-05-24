@@ -9,8 +9,8 @@ tags: wordpress
 ##### 1.注册域名
 域名选择
 
-域名后缀常用的有.com,.net,.org，当然也可以选择一些比较个性的如.top等，.com域名的均价为每年￥50左右。
-注意.cn域名属于国家域名，由CNNIC管理，中国互联网络管理中心 （China Internet Network Information Center） 即CNNIC负责管理，因此不建议注册.cn域名。<!--more-->
+域名后缀常用的有.com,.net,.org，当然也可以选择一些比较个性的如.top等。
+.cn域名属于国家域名，由CNNIC管理，中国互联网络管理中心 （China Internet Network Information Center） 即CNNIC负责管理，因此不建议注册.cn域名。<!--more-->
 
 域名注册机构
 
@@ -44,7 +44,7 @@ wordpress博客系统下载地址：[China 简体中文 — WordPress官网](htt
 
 2. @：直接解析主域名 baidu.com
 
-3. *：泛解析，匹配其他所有域名 *.baidu.com
+3. *：泛解析，匹配其他所有域名  *.baidu.com
 
 ##### 2.wordpress的安装
 1.通过ftp工具将下载好的wordpress程序上传到服务器上，ftp工具下载：百度8uftp即可~
